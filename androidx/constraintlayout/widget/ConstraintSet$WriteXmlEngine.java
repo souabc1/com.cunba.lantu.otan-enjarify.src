@@ -1,0 +1,82 @@
+package androidx.constraintlayout.widget;
+
+import android.content.Context;
+import android.content.res.Resources;
+import java.util.HashMap;
+
+class ConstraintSet$WriteXmlEngine
+{
+  public Context OooO00o;
+  public int OooO0O0;
+  public HashMap OooO0OO;
+  
+  public String OooO00o(int paramInt)
+  {
+    int i = -1;
+    String str = "unknown";
+    if (paramInt != i) {}
+    try
+    {
+      Object localObject = this.OooO00o;
+      localObject = ((Context)localObject).getResources();
+      return ((Resources)localObject).getResourceEntryName(paramInt);
+    }
+    catch (Exception localException)
+    {
+      localStringBuilder = new java/lang/StringBuilder;
+      localStringBuilder.<init>();
+      localStringBuilder.append(str);
+      i = this.OooO0O0 + 1;
+      this.OooO0O0 = i;
+      localStringBuilder.append(i);
+    }
+    StringBuilder localStringBuilder = new java/lang/StringBuilder;
+    localStringBuilder.<init>();
+    localStringBuilder.append(str);
+    i = this.OooO0O0 + 1;
+    this.OooO0O0 = i;
+    localStringBuilder.append(i);
+    return localStringBuilder.toString();
+    return localStringBuilder.toString();
+  }
+  
+  public String getName(int paramInt)
+  {
+    Object localObject1 = this.OooO0OO;
+    Object localObject2 = Integer.valueOf(paramInt);
+    boolean bool = ((HashMap)localObject1).containsKey(localObject2);
+    localObject2 = "";
+    Object localObject3 = "@+id/";
+    if (bool)
+    {
+      localObject1 = new java/lang/StringBuilder;
+      ((StringBuilder)localObject1).<init>();
+      ((StringBuilder)localObject1).append((String)localObject3);
+      localObject3 = this.OooO0OO;
+      localObject4 = Integer.valueOf(paramInt);
+      localObject4 = (String)((HashMap)localObject3).get(localObject4);
+      ((StringBuilder)localObject1).append((String)localObject4);
+      ((StringBuilder)localObject1).append((String)localObject2);
+      return ((StringBuilder)localObject1).toString();
+    }
+    if (paramInt == 0) {
+      return "parent";
+    }
+    localObject1 = OooO00o(paramInt);
+    HashMap localHashMap = this.OooO0OO;
+    Object localObject4 = Integer.valueOf(paramInt);
+    localHashMap.put(localObject4, localObject1);
+    localObject4 = new java/lang/StringBuilder;
+    ((StringBuilder)localObject4).<init>();
+    ((StringBuilder)localObject4).append((String)localObject3);
+    ((StringBuilder)localObject4).append((String)localObject1);
+    ((StringBuilder)localObject4).append((String)localObject2);
+    return ((StringBuilder)localObject4).toString();
+  }
+}
+
+
+/* Location:           G:\apknx\enjarify-master\com.cunba.lantu.otan-enjarify.jar
+ * Qualified Name:     androidx.constraintlayout.widget.ConstraintSet.WriteXmlEngine
+ * JD-Core Version:    0.7.0.1
+ */
